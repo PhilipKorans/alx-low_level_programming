@@ -2,14 +2,21 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
-int main(void)
+/**
+ * main - prints the last digit of the random
+ * number stored in the variable n
+ * Return: Always zero (Success)
+ */
+
+
+
+int  main(void)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("Last digit of, %d is %d ", n, n % 10);
+	printf("Last digit of %d is %d ", n, n % 10);
 	if (n % 10 > 5)
 	printf("and is greater than 5\n");
 	else if (n % 10 == 0)
